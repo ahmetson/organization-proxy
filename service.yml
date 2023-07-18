@@ -1,0 +1,15 @@
+Services:
+  - Type: Proxy
+    Name: Organization
+    Instance: "organization-sepolia"
+    Controllers:
+      - Type: Router
+        Name: "source"
+        Instances:
+          - Port: 4001
+            Instance: "org-proxy"
+      - Type: Replier
+        Name: "destination"
+        Instances:
+          - Port: 4002
+            Instance: "w3-storage"
