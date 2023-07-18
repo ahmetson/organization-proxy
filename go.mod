@@ -3,6 +3,7 @@ module github.com/ahmetson/organization-proxy
 go 1.21rc2
 
 replace github.com/ahmetson/service-lib => D:/sds/service-lib
+replace github.com/ahmetson/common-lib => D:/sds/common-lib
 
 require (
 	github.com/ahmetson/service-lib v0.0.0-20230717171059-161a7e847eed
@@ -11,7 +12,7 @@ require (
 
 require (
 	github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6 // indirect
-	github.com/ahmetson/common-lib v0.0.0-20230717140750-5e95e61d69c2 // indirect
+	github.com/ahmetson/common-lib v0.0.0-20230717171223-88c93597f3b5 // indirect
 	github.com/btcsuite/btcd/btcec/v2 v2.3.2 // indirect
 	github.com/charmbracelet/lipgloss v0.6.0 // indirect
 	github.com/charmbracelet/log v0.1.2 // indirect
