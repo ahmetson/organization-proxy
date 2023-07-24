@@ -22,6 +22,13 @@ For the developers to find the files on [IPFS](https://ipfs.io/) the *CID* are s
 
 ## Dependency
 
+Environment variables:
+
+* `STATIC_ORGANIZATION` &ndash; address of the smartcontract
+* `REMOTE_URL` &ndash; rpc node to the blockchain
+* `ACCOUNT` &ndash; private key of the account
+
+### Smartcontract struct
 Requires the smartcontract [StaticOrganization](https://github.com/ahmetson/static-organization).
 
 Need to install `abigen`.
