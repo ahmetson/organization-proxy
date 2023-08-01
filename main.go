@@ -43,6 +43,10 @@ func main() {
 
 	service.SetCustomSource(sourceController)
 
+	webProxy := "github.com/ahmetson/web-proxy"
+	service.RequireProxy(webProxy, configuration.DefaultContext)
+	service.Pipe(webProxy, configuration.SourceName)
+
 	service.Controller.RequireDestination(configuration.ReplierType)
 
 	err = service.Prepare()
